@@ -30,5 +30,15 @@ This project is a simple Flask-based backend service that generates **ATS-optimi
 1. **Clone the repository**
 
 ```bash
-git clone https://github.com/yourusername/ai-resume-generator.git
+git clone https://github.com/talluriprudhvi/resume_build.git
 cd ai-resume-generator
+
+
+✅ Sample Request
+curl -X POST http://127.0.0.1:5000/generate_resume \
+     -H "Content-Type: application/json" \
+     -d '{
+           "name": "NAME",
+           "title": "Senior AI/ML Engineer",
+           "in_message": "Senior AI Engineer with 9 years of experience specializing in generative AI worked in capgemini from 2020 to 2024 and now I am working at Lava Data with B.Tech from JNTUH. I am AWS certified."
+         }' --output resume.docx
